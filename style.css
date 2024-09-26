@@ -92,3 +92,48 @@ header {
 .review .rating { text-align: center; margin: 20px 0}
 .review .rating i { color: #72aec8 }
 .review .reviewer { font-size: 14px; }
+
+/* Section subscribe */
+.subscribe {
+    width: 80%;
+    background: #212529;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.subscribe .text p { color: #bebebe }
+.subscribe .text h4 { color: #fff; font-size: 30px; margin: 20px 0; }
+.subscribe .email { display: flex; }
+.subscribe .email .input-email {
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.subscribe .email .input-subscribe {
+    background: #72aec8;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.subscribe .email .input-subscribe:hover { background: #212529; }
+
+/* Section insta */
+.insta h4 { text-align: center; font-size: 30px; }
+.insta .row-image { display: flex; justify-content: space-between; width: 80%; margin: auto; }
+.insta .row-image img { width: 19%; }
+
+/* Footer */
+footer { display: flex; width: 80%; margin: auto; justify-content: space-between; padding: 50px 0; }
+.social { width: 25%; }
+.social p, .social i { color: #bebebe; }
+.icon-social i{ padding: 15px;}
+.quick-links ul, .helps ul { padding: 0; }
+.quick-links ul li, .helps ul li { padding-bottom: 10px;  }
+.contact-us p { color: #bebebe; }
+
+a { text-decoration: none; color: #000; transition: 0.5s; }
+a:hover { color: #72aec8; }

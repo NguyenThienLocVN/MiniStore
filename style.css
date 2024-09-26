@@ -54,4 +54,41 @@ header {
  .services-item .top { display: flex; align-items: center; }
  .services-item .top p { font-weight: bold; }
  .services-item .top i { color: #72aec8; padding: 10px }
-.bottom { color: #aeaeae }
+.bottom { color: #aeaeae; margin-left: 35px; }
+
+/* Mobile products */
+.mobile-products, .smart-watches, .latest-post, .review {
+    width: 80%;
+    margin: 50px auto;;
+}
+
+.mobile-products .header, .smart-watches .header, .latest-post .header { display: flex; align-items: center;justify-content: space-between;}
+.mobile-products .header a, .smart-watches .header a, .latest-post .header a  { color: #000; }
+.mobile-products .header a:hover, .smart-watches .header a:hover, .latest-post .header a:hover { text-decoration: none; }
+.mobile-products .header h3, .smart-watches .header h3, .latest-post .header h3 { font-size: 32px; }
+
+.list-product { display: flex; justify-content: space-between;}
+.list-product .item { width: 23%; }
+.list-product .text { display: flex;justify-content: space-between; }
+.list-product .text p { font-size: 22px; }
+.list-product .text .price { color: #72aec8 }
+.list-product img { width: 100%; }
+
+/* Section SALE */
+.sale { background: #edf1f3; display: flex; align-items: center; }
+.sale .content { padding-left: 200px; }
+ .sale p { font-size: 72px; margin-bottom: 20px; }
+
+ /* Section lastest post */
+.list-post { display: flex; justify-content: space-between; }
+.list-post .item { width: 31%; }
+.list-post .text .date { color: #6c757d; font-size: 14px; }
+.list-post .text p { font-size: 22px; }
+.list-post img { width: 100%; }
+
+/* Section review */
+.review h6 { text-align: center; font-size: 200px; height: 120px; margin: 0;}
+.review p { text-align: center; font-size: 35px; padding: 0 50px;}
+.review .rating { text-align: center; margin: 20px 0}
+.review .rating i { color: #72aec8 }
+.review .reviewer { font-size: 14px; }

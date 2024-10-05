@@ -1,11 +1,12 @@
 <?php include('layouts/header.php'); ?>
 
     <section class="slide">
-        <img src="./assets/images/banner-image.png" alt="">
+        
         <div class="content">
             <p>YOUR PRODUCTS <br> ARE GREAT.</p>
             <input type="button" class="button-shop-product" value="SHOP PRODUCT">
         </div>
+        <img src="./assets/images/banner-image.png" alt="">
     </section>
 
     <section class="services">
@@ -39,18 +40,19 @@
         </div>
     </section>
 
-    <section class="mobile-products">
+    <section class="mobile-products ">
         <div class="header">
             <h3>MOBILE PRODUCTS</h3>
             <a href="#">GO TO SHOP</a>
         </div>
-        <div class="list-product">
+        <div class="list-product ">
             <div class="item">
                 <img src="./assets/images/product-item1.jpg" alt="">
                 <div class="text">
                     <p>IPHONE 10</p>
                     <p class="price">$980</p>
                 </div>
+                <a href="#">ADD TO CART</a>
             </div>
             <div class="item">
                 <img src="./assets/images/product-item2.jpg" alt="">
@@ -58,6 +60,7 @@
                     <p>IPHONE 11</p>
                     <p class="price">$1100</p>
                 </div>
+                <a href="#">ADD TO CART <i class="fa-solid fa-cart-shopping"></i></a>
             </div>
             <div class="item">
                 <img src="./assets/images/product-item3.jpg" alt="">
@@ -65,6 +68,7 @@
                     <p>IPHONE 12</p>
                     <p class="price">$780</p>
                 </div>
+                <a href="#">ADD TO CART <i class="fa-solid fa-cart-shopping"></i></a>
             </div>
             <div class="item">
                 <img src="./assets/images/product-item4.jpg" alt="">
@@ -72,8 +76,10 @@
                     <p>IPHONE 13</p>
                     <p class="price">$1500</p>
                 </div>
+                <a href="#">ADD TO CART <i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
+
     </section>
 
     <section class="smart-watches">

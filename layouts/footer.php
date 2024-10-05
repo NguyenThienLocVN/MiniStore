@@ -1,6 +1,6 @@
 <footer>
             <div class="social">
-                <img src="./images/main-logo.png" />
+                <img src="assets/images/main-logo.png" />
                 <p>Cửa hàng kinh doanh sản phẩm điện tử uy tín Cửa hàng kinh doanh sản phẩm điện tử uy tín Cửa hàng kinh doanh sản phẩm điện tử uy tín Cửa hàng kinh doanh sản phẩm điện tử uy tín</p>
                 <div class="icon-social">
                     <i class="fa-brands fa-facebook"></i>
@@ -37,7 +37,13 @@
                 <p>If you need support? Give us a call</p>
                 <a href="#">+94 123 456</a>
             </div>
+
+            <div class="scroll-top" id="scroll-top">
+                <i class="fa-solid fa-up-long"></i>
+            </div>
         </footer>
     </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

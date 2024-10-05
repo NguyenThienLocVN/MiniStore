@@ -53,65 +53,22 @@
 
     }
 
-    $(document).ready(function() {
+    jQuery(document).ready(function($) {
+      // Scroll top
+      var duration = 500;
+      $(window).scroll(function(){
+        if($(this).scrollTop() < 300) {
+          $('#scroll-top').fadeOut(duration);
+        } else {
+          $('#scroll-top').fadeIn(duration);
+        }
+      });
 
-      searchPopup();
-      initProductQty();
-
-      var swiper = new Swiper(".main-swiper", {
-        speed: 500,
-        navigation: {
-          nextEl: ".swiper-arrow-prev",
-          prevEl: ".swiper-arrow-next",
-        },
-      });         
-
-      var swiper = new Swiper(".product-swiper", {
-        slidesPerView: 4,
-        spaceBetween: 10,
-        pagination: {
-          el: "#mobile-products .swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          980: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          }
-        },
-      });      
-
-      var swiper = new Swiper(".product-watch-swiper", {
-        slidesPerView: 4,
-        spaceBetween: 10,
-        pagination: {
-          el: "#smart-watches .swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          980: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          }
-        },
-      }); 
-
-      var swiper = new Swiper(".testimonial-swiper", {
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-arrow-prev",
-          prevEl: ".swiper-arrow-next",
-        },
-      }); 
-
+      $('#scroll-top').on('click', function(){
+        $('html, body').animate({scrollTop: 0}, 1000);
+          return false;
+      })
     }); // End of a document ready
 
+    
 })(jQuery);

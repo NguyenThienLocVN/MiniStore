@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,4 +44,12 @@
                 <i class="fa-solid fa-user"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
+            <?php
+                if(isset($_SESSION['user'])){
+                    echo "Xin chào, ".$_SESSION['user'];
+                    echo "<a href='app/logout.php'>LOGOUT</a>";
+                } else { 
+                    echo "<a href='http://localhost/MiniStore/app/login.php'>LOGIN</a>";
+                }
+            ?>
         </header>

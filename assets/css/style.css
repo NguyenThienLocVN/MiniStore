@@ -32,7 +32,7 @@ header {
 /* Section content */
 .slide { 
     background: #edf1f3;
-    display: flex; 
+    display: flex !important; 
     align-items: center; 
     justify-content: center;
  }
@@ -68,7 +68,7 @@ header {
 .mobile-products .header a:hover, .smart-watches .header a:hover, .latest-post .header a:hover { text-decoration: none; }
 .mobile-products .header h3, .smart-watches .header h3, .latest-post .header h3 { font-size: 32px; }
 
-.list-product { display: flex; justify-content: space-between;}
+.list-product { display: flex; justify-content: space-between; padding-bottom: 50px;}
 .list-product .item { width: 23%; position: relative; }
 .list-product .text { display: flex;justify-content: space-between; }
 .list-product .text p { font-size: 22px; }

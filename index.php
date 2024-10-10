@@ -1,13 +1,24 @@
 <?php include('layouts/header.php'); ?>
 
-    <section class="slide">
-        
-        <div class="content">
-            <p>YOUR PRODUCTS <br> ARE GREAT.</p>
-            <input type="button" class="button-shop-product" value="SHOP PRODUCT">
+    <div class="container-slide">
+        <div class="swiper-wrapper">
+            <section class="slide swiper-slide">
+                <div class="content">
+                    <p>YOUR PRODUCTS <br> ARE GREAT.</p>
+                    <input type="button" class="button-shop-product" value="SHOP PRODUCT">
+                </div>
+                <img src="./assets/images/banner-image.png" alt="">
+            </section>
+            <section class="slide swiper-slide">
+                <div class="content">
+                    <p>TECHNOLOGY HACK <br> YOU WON'T GET</p>
+                    <input type="button" class="button-shop-product" value="SHOP PRODUCT">
+                </div>
+                <img src="./assets/images/banner-image.png" alt="">
+            </section>
         </div>
-        <img src="./assets/images/banner-image.png" alt="">
-    </section>
+    </div>
+    
 
     <section class="services">
         <div class="services-item">
@@ -40,13 +51,13 @@
         </div>
     </section>
 
-    <section class="mobile-products ">
+    <section class="mobile-products swiper">
         <div class="header">
             <h3>MOBILE PRODUCTS</h3>
             <a href="#">GO TO SHOP</a>
         </div>
-        <div class="list-product ">
-            <div class="item">
+        <div class="list-product swiper-wrapper">
+            <div class="item swiper-slide">
                 <img src="./assets/images/product-item1.jpg" alt="">
                 <div class="text">
                     <p>IPHONE 10</p>
@@ -54,7 +65,7 @@
                 </div>
                 <a href="#">ADD TO CART</a>
             </div>
-            <div class="item">
+            <div class="item swiper-slide">
                 <img src="./assets/images/product-item2.jpg" alt="">
                 <div class="text">
                     <p>IPHONE 11</p>
@@ -62,7 +73,7 @@
                 </div>
                 <a href="#">ADD TO CART <i class="fa-solid fa-cart-shopping"></i></a>
             </div>
-            <div class="item">
+            <div class="item swiper-slide">
                 <img src="./assets/images/product-item3.jpg" alt="">
                 <div class="text">
                     <p>IPHONE 12</p>
@@ -70,7 +81,7 @@
                 </div>
                 <a href="#">ADD TO CART <i class="fa-solid fa-cart-shopping"></i></a>
             </div>
-            <div class="item">
+            <div class="item swiper-slide">
                 <img src="./assets/images/product-item4.jpg" alt="">
                 <div class="text">
                     <p>IPHONE 13</p>
@@ -80,36 +91,37 @@
             </div>
         </div>
 
+        <div class="swiper-pagination"></div>
     </section>
 
-    <section class="smart-watches">
+    <section class="smart-watches swiper">
         <div class="header">
             <h3>MOBILE PRODUCTS</h3>
             <a href="#">GO TO SHOP</a>
         </div>
-        <div class="list-product">
-            <div class="item">
+        <div class="list-product swiper-wrapper">
+            <div class="item swiper-slide">
                 <img src="./assets/images/product-item6.jpg" alt="">
                 <div class="text">
                     <p>PINK WATCH</p>
                     <p class="price">$980</p>
                 </div>
             </div>
-            <div class="item">
+            <div class="item swiper-slide">
                 <img src="./assets/images/product-item7.jpg" alt="">
                 <div class="text">
                     <p>HEAVY WATCH</p>
                     <p class="price">$1100</p>
                 </div>
             </div>
-            <div class="item">
+            <div class="item swiper-slide">
                 <img src="./assets/images/product-item8.jpg" alt="">
                 <div class="text">
                     <p>SPOTTED WATCH</p>
                     <p class="price">$780</p>
                 </div>
             </div>
-            <div class="item">
+            <div class="item swiper-slide">
                 <img src="./assets/images/product-item9.jpg" alt="">
                 <div class="text">
                     <p>BLACK WATCH</p>

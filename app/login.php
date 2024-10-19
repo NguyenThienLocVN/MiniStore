@@ -28,9 +28,7 @@ if(isset($_POST['submit'])){
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/images/favicon.png">
-  <title>
-    Soft UI Dashboard by Creative Tim
-  </title>
+  <title> Login | Ministore</title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->
@@ -139,7 +137,7 @@ if(isset($_POST['submit'])){
                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                   <p class="mb-4 text-sm mx-auto">
                     Don't have an account?
-                    <a href="javascript:;" class="text-info text-gradient font-weight-bold">Sign up</a>
+                    <a href="http://localhost/MiniStore/app/signup.php" class="text-info text-gradient font-weight-bold">Sign up</a>
                   </p>
                 </div>
               </div>

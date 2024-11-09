@@ -364,8 +364,9 @@ if(mysqli_num_rows($query) > 0 || mysqli_num_rows($querydanhmuc) > 0) {
       <div class="row">
         <div class="col-12">
           <div class="card mb-4">
-            <div class="card-header pb-0">
-              <h6>Products | Danh mục sản phẩm</h6>
+            <div class="card-header pb-0 d-flex justify-content-between">
+              <h6>Categories | Danh mục sản phẩm</h6>
+              <a href="http://localhost/MiniStore/app/backend/create-product.php" class="btn btn-primary">Thêm sản phẩm</a>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
               <div class="table-responsive p-0">
@@ -425,7 +426,7 @@ if(mysqli_num_rows($query) > 0 || mysqli_num_rows($querydanhmuc) > 0) {
           <div class="card mb-4">
             <div class="card-header pb-0 d-flex justify-content-between">
               <h6>Categories | Danh mục sản phẩm</h6>
-              <a href="http://localhost/MiniStore/app/backend//create-category.php" class="btn btn-primary">Thêm sản phẩm</a>
+              <a href="http://localhost/MiniStore/app/backend//create-category.php" class="btn btn-primary">Thêm danh mục</a>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
               <div class="table-responsive p-0">
@@ -452,6 +453,7 @@ if(mysqli_num_rows($query) > 0 || mysqli_num_rows($querydanhmuc) > 0) {
                       </td>
                       <td class="align-middle">
                         <a href='http://localhost/MiniStore/app/backend/edit-category.php?category_id=<?php echo $cat['id'] ?>' class="btn btn-primary">Sửa</a>
+                        <a href='http://localhost/MiniStore/app/backend/delete-category.php?category_id=<?php echo $cat['id'] ?>' class="btn btn-secondary">Xóa</a>
                       </td>
                     </tr>
                     <?php } ?>

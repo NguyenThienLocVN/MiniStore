@@ -1,10 +1,13 @@
 <?php
     include('../../config/db.php');
-    $current_cat = $_GET['category_id'];
-    $sqlcat = "SELECT * FROM categories WHERE id='".$current_cat."'";
-    $result = mysqli_query($conn, $sqlcat);
+    if(isset($_GET['category_id'])){
+      $current_cat = $_GET['category_id'];
+      $sqlcat = "SELECT * FROM categories WHERE id='".$current_cat."'";
+      $result = mysqli_query($conn, $sqlcat);
 
-    $dataCat = mysqli_fetch_all($result, MYSQLI_ASSOC);
+      $dataCat = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
+    
 
     if(isset($_POST['submit'])){
         $catName = $_POST['category_name'];
